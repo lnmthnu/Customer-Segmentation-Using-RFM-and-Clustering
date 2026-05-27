@@ -5,15 +5,7 @@ Online retail is a transactional data set which contains all the transactions oc
 ## Dataset Information
 - Source: https://archive.ics.uci.edu/dataset/352/online+retail
 - Number of transactions: 541909
-- Features include:
-+ InvoiceNo
-+ StockCode
-+ Description
-+ Quantity
-+ InvoiceDate
-+ UnitPrice
-+ CustomerID
-+ Country
+- Features include: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 ## Methodology
 ### 1. Data preprocessing
 - Removed missing values and canceled transactions
