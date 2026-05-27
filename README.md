@@ -6,14 +6,14 @@ Online retail is a transactional data set which contains all the transactions oc
 - Source: https://archive.ics.uci.edu/dataset/352/online+retail
 - Number of transactions: 541909
 - Features include:
-InvoiceNo
-StockCode
-Description
-Quantity
-InvoiceDate
-UnitPrice
-CustomerID
-Country
++ InvoiceNo
++ StockCode
++ Description
++ Quantity
++ InvoiceDate
++ UnitPrice
++ CustomerID
++ Country
 ## Methodology
 ### 1. Data preprocessing
 - Removed missing values and canceled transactions
@@ -36,12 +36,12 @@ The following metrics were calculated for each customer:
 - Cluster 2	At-risk / inactive customers
 - Cluster 3	VIP loyal customers
 ## Technologies Used
-R
-tidyverse
-dplyr
-ggplot2
-cluster
-factoextra
++ R
++ tidyverse
++ dplyr
++ ggplot2
++ cluster
++ factoextra
 ## Results
 The project successfully identified customer groups with different purchasing behaviors. The segmentation can help businesses:
 - Improve customer retention
