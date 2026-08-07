@@ -28,32 +28,32 @@ Customer Segmentation
 Power BI Dashboard
 ```
 ## 👥 Customer Segments
-Segment	Description
-Champions	High-value and highly engaged customers
-Loyal Customers	Customers with consistent purchasing behavior
-Lost / At Risk	Customers with low recent activity
+
+- Champions: High-value and highly engaged customers
+- Loyal Customers: Customers with consistent purchasing behavior
+- Lost / At Risk: Customers with low recent activity
 
 ## 📊 Dashboard
 ### 1. Revenue Overview
-Total Revenue
-MoM & QoQ Growth
-Revenue Trend
-Monthly & Quarterly Revenue
+- Total Revenue
+- MoM & QoQ Growth
+- Revenue Trend
+- Monthly & Quarterly Revenue
 
 ### 2. Customer Value & Churn Risk
-Customer Segmentation
-Customer Value
-Recency × Monetary
-Churn Rate
-Cohort Analysis
+- Customer Segmentation
+- Customer Value
+- Recency × Monetary
+- Churn Rate
+- Cohort Analysis
 
 ## 🛠️ Tools
-Python — Data Cleaning, RFM Analysis & K-Means
-Power BI — Dashboard & Data Visualization
-Git/GitHub — Version Control
+- Rstudio — Data Cleaning, RFM Analysis & K-Means
+- Power BI — Dashboard & Data Visualization
+- Git/GitHub — Version Control
 
 ## 📁 Dataset
 
-Online Retail Dataset - https://archive.ics.uci.edu/dataset/352/online+retail
+- Online Retail Dataset - https://archive.ics.uci.edu/dataset/352/online+retail
 
-The dataset contains transaction-level information including invoice, product, quantity, price, customer, date, and country.
+- The dataset contains transaction-level information including invoice, product, quantity, price, customer, date, and country.
