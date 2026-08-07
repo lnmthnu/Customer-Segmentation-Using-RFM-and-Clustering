@@ -1,4 +1,4 @@
-# Customer Segmentation & Revenue Analysis
+# Customer Segmentation using RFM analysis and Clustering
 
 ## 📌 Overview
 
