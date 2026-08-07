@@ -1,42 +1,52 @@
-# RFM Customer Segmentation & Retention Analysis
+# 📊 Customer Segmentation & Revenue Analytics
 
-## Overview
-Online retail is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
-## Dataset Information
-- Source: https://archive.ics.uci.edu/dataset/352/online+retail
-- Number of transactions: 541909
-- Features include: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
-## Methodology
-### 1. Data preprocessing
-- Removed missing values and canceled transactions
-- Converted data types and transformed data format
-- Filtered invalid quantities and prices
-### 2. RFM Analysis
-The following metrics were calculated for each customer:
-- Recency (R): Number of days since last purchase
-- Frequency (F): Number of transactions
-- Monetary (M): Total spending amount
-### 3. Data preparation for Clustering
-- Treated outliers in RFM variables
-- Standardized features using scaling
-- Prepared the dataset for K-Means clustering
-### 4. K-Means Clustering
-- Used the Elbow Method and Average Silhouette Score to determine optimal k
-- Applied K-Means clustering
-### 5. Customer Segments
-- Cluster 1	Active customers
-- Cluster 2	At-risk / inactive customers
-- Cluster 3	VIP loyal customers
-## Technologies Used
-+ R
-+ tidyverse
-+ dplyr
-+ ggplot2
-+ cluster
-+ factoextra
-## Results
-The project successfully identified customer groups with different purchasing behaviors. The segmentation can help businesses:
-- Improve customer retention
-- Personalize marketing campaigns
-- Identify high-value customers
-- Optimize business strategies
+An end-to-end customer analytics project using **RFM Analysis and K-Means Clustering** to segment customers based on purchasing behavior and build interactive Power BI dashboards for revenue monitoring, customer value analysis, and churn-risk identification.
+
+---
+
+## 🎯 Project Overview
+
+Understanding **how revenue changes over time** and **which customers drive business value** is essential for making data-driven decisions.
+
+This project uses transaction-level data from the **Online Retail dataset** to transform raw sales transactions into actionable customer insights.
+
+The analysis combines:
+
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis
+- RFM Analysis
+- K-Means Clustering
+- Customer Segmentation
+- Revenue Analysis
+- Customer Churn-Risk Analysis
+- Interactive Power BI Dashboards
+
+The project ultimately answers two key business questions:
+
+> **1. How is revenue changing over time?**
+
+> **2. Who are the most valuable customers, and who is at risk of leaving?**
+
+---
+
+# 🗂️ Dataset
+
+The project uses the **Online Retail dataset**, containing transactional records from an online retail business.
+
+### Main Variables
+
+| Variable | Description |
+|---|---|
+| `InvoiceNo` | Unique transaction/invoice identifier |
+| `StockCode` | Unique product code |
+| `Description` | Product description |
+| `Quantity` | Quantity purchased |
+| `InvoiceDate` | Transaction date and time |
+| `UnitPrice` | Price per unit |
+| `CustomerID` | Unique customer identifier |
+| `Country` | Customer's country |
+
+A new metric was created to measure transaction-level revenue:
+
+```text
+Revenue = Quantity × UnitPrice
