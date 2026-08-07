@@ -1,83 +1,59 @@
-# 📊 Customer Segmentation & Revenue Analytics
+# Customer Segmentation & Revenue Analysis
 
-An end-to-end customer analytics project using **RFM Analysis and K-Means Clustering** to segment customers based on purchasing behavior and build interactive Power BI dashboards for revenue monitoring, customer value analysis, and churn-risk identification.
+## 📌 Overview
 
----
+This project uses **RFM Analysis and K-Means Clustering** to segment customers based on their purchasing behavior.
 
-## 🎯 Project Overview
-
-Understanding **how revenue changes over time** and **which customers drive business value** is essential for making data-driven decisions.
-
-This project uses transaction-level data from the **Online Retail dataset** to transform raw sales transactions into actionable customer insights.
-
-The analysis combines:
-
-- Data Cleaning & Preprocessing
-- Exploratory Data Analysis
-- RFM Analysis
-- K-Means Clustering
-- Customer Segmentation
-- Revenue Analysis
-- Customer Churn-Risk Analysis
-- Interactive Power BI Dashboards
-
-## 🎯 Business Goal
+### 🎯 Business Goal
 
 We aim to segment customers based on RFM analysis, enabling the company to target customers more effectively.
 
----
+### ❓ Business Questions
 
-# 🗂️ Dataset
+- How is revenue changing over time?
+- Who are the most valuable customers?
+- Who is at risk of leaving?
 
-The project uses the **Online Retail dataset**, containing transactional records from an online retail business.
-
-### Main Variables
-
-| Variable | Description |
-|---|---|
-| `InvoiceNo` | Unique transaction/invoice identifier |
-| `StockCode` | Unique product code |
-| `Description` | Product description |
-| `Quantity` | Quantity purchased |
-| `InvoiceDate` | Transaction date and time |
-| `UnitPrice` | Price per unit |
-| `CustomerID` | Unique customer identifier |
-| `Country` | Customer's country |
-
-A new metric was created to measure transaction-level revenue:
+## 🔄 Workflow
 
 ```text
-Revenue = Quantity × UnitPrice
+Data Cleaning
+     ↓
+RFM Analysis
+     ↓
+K-Means Clustering
+     ↓
+Customer Segmentation
+     ↓
+Power BI Dashboard
+```
+## 👥 Customer Segments
+Segment	Description
+Champions	High-value and highly engaged customers
+Loyal Customers	Customers with consistent purchasing behavior
+Lost / At Risk	Customers with low recent activity
 
-# Project Workflow
-                Online Retail Dataset
-                         │
-                         ▼
-              Data Cleaning & Preparation
-                         │
-                         ▼
-                 Exploratory Analysis
-                         │
-                         ▼
-                    RFM Analysis
-                         │
-                         ▼
-              Customer-level RFM Data
-                         │
-                         ▼
-                Feature Preparation
-                         │
-                         ▼
-                 K-Means Clustering
-                         │
-                         ▼
-                Customer Segmentation
-                         │
-              ┌──────────┴──────────┐
-              ▼                     ▼
-      Revenue Performance     Customer Analytics
-              │                     │
-              ▼                     ▼
-       Dashboard 1             Dashboard 2
-      Revenue Overview       Customer Value &
-                             Churn Risk
+## 📊 Dashboard
+### 1. Revenue Overview
+Total Revenue
+MoM & QoQ Growth
+Revenue Trend
+Monthly & Quarterly Revenue
+
+### 2. Customer Value & Churn Risk
+Customer Segmentation
+Customer Value
+Recency × Monetary
+Churn Rate
+Cohort Analysis
+
+## 🛠️ Tools
+Python — Data Cleaning, RFM Analysis & K-Means
+Power BI — Dashboard & Data Visualization
+Git/GitHub — Version Control
+
+## 📁 Dataset
+
+Online Retail Dataset - https://archive.ics.uci.edu/dataset/352/online+retail
+
+The dataset contains transaction-level information including invoice, product, quantity, price, customer, date, and country.
