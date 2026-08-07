@@ -21,11 +21,9 @@ The analysis combines:
 - Customer Churn-Risk Analysis
 - Interactive Power BI Dashboards
 
-The project ultimately answers two key business questions:
+## 🎯 Business Goal
 
-> **1. How is revenue changing over time?**
-
-> **2. Who are the most valuable customers, and who is at risk of leaving?**
+We aim to segment customers based on RFM analysis, enabling the company to target customers more effectively.
 
 ---
 
@@ -50,3 +48,36 @@ A new metric was created to measure transaction-level revenue:
 
 ```text
 Revenue = Quantity × UnitPrice
+
+# Project Workflow
+                Online Retail Dataset
+                         │
+                         ▼
+              Data Cleaning & Preparation
+                         │
+                         ▼
+                 Exploratory Analysis
+                         │
+                         ▼
+                    RFM Analysis
+                         │
+                         ▼
+              Customer-level RFM Data
+                         │
+                         ▼
+                Feature Preparation
+                         │
+                         ▼
+                 K-Means Clustering
+                         │
+                         ▼
+                Customer Segmentation
+                         │
+              ┌──────────┴──────────┐
+              ▼                     ▼
+      Revenue Performance     Customer Analytics
+              │                     │
+              ▼                     ▼
+       Dashboard 1             Dashboard 2
+      Revenue Overview       Customer Value &
+                             Churn Risk
